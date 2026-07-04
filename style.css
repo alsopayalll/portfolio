@@ -1,0 +1,207 @@
+*{
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: rgb(251, 251, 175);
+    margin: 0px;
+    padding-top: 100px;
+}
+.nav{
+    background: #ffffff;
+    height: 8vh;
+    padding: 20px;
+    width: 97%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.navLinks{
+    display: flex;
+    gap: 20px;
+}
+.nav p{
+    text-align: center;
+    background: rgb(255, 255, 41);
+    padding: 10px;
+    width: 50px;
+    border-radius:25px;
+    margin-left: 5%;
+}
+.navLinks a{
+    padding: 10px;
+}
+h1{
+    font-size:xxx-large;
+}
+h2{
+    font-size: xx-large;
+}
+
+#heroSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-self: center;
+    width: 80%;
+    margin-top: 40px;
+}
+#about{
+    height: fit-content;
+    width: 50%;
+    margin-right: 10px;
+}
+.polaroid{
+    padding:16px ;
+    margin-left: 10px;
+    border-radius: 20px;
+    height: fit-content;
+    width: fit-content;
+    background-color: #fff;
+    box-shadow: 3px 3px rgb(130, 130, 130);
+}
+.polaroid img{
+    height: 250px;
+    border-radius: 16px;
+    width:250px;
+    object-fit: cover;
+}
+#skillSection{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    justify-content: space-between;
+    margin: 40px;
+    width: 80%;
+}
+#skillVisual{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.skill{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:15px;  
+}
+.skill p{
+    width: 40%;
+    font-weight: bold;
+}
+
+.total{
+    border: solid 1.5px rgb(185, 185, 121);
+    height: 20px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 20px;
+}
+.percent{
+    height:20px ;
+    background-color: rgb(255, 255, 25);
+    border-radius: 10px;   
+}
+#projectSection{
+    width: 80%;
+    margin:0 auto;
+    padding: 0;
+}
+.projectGrid{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: black;
+    border-radius: 30px;
+}
+
+
+#projectPolo img{
+    width: 450px;
+    height: 300px;
+    object-fit: cover;
+  
+}
+
+#acievementSection{
+    width: 80%;
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    
+}
+
+.achievementCard{
+    background-color: white;
+    width: 90%;
+    height: fit-content;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 25px;
+    box-shadow: 3px 3px rgb(130, 130, 130);
+}
+
+#contactSection{
+    width: 80%;
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+}
+
+.contacts{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background-color: white;
+    width: 92.7%;
+    height: fit-content;
+    padding-left: 20px;
+    margin-bottom: 30px;
+    border-radius: 25px;
+    box-shadow: 3px 3px rgb(130, 130, 130);
+}
+
+footer{
+    background-color: #fff;
+    text-align: center;
+    padding: 30px;
+    font-weight:600;
+}
+
+@media(max-width:768px) {
+    #projectSection{
+        margin: 60px;
+    }
+    .projectGrid{
+        grid-template-columns: repeat(1,1fr);
+    }
+    #projectPolo img{
+        width: 100%;
+    }
+}
+
+.projectGrid .polaroid:hover{
+    transform: scale(1.03);
+    box-shadow: 0 0 15px 5px yellow;
+}
+a:hover{
+    color: #fad43b;
+}
+
+
+
+
+
